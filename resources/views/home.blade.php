@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,12 @@
     <title>{{ $pageTitle }}</title>
     @vite('resources/sass/app.scss')
 </head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<body> --}}
+@extends('layouts.app')
+
+@section('content')
+@include('default')
+    {{-- <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container">
             <a href="{{ route('home') }}" class="navbar-brand mb-0 h1"><i class="bi-hexagon-fill me-2"></i> Data Master</a>
 
@@ -38,8 +42,8 @@
             <div class="bi-house-fill me-3 fs-1"></div>
             <h4 class="mb-0">Well done! this is {{ $pageTitle }}.</h4>
         </div>
-    </div>
-
+    </div> --}}
+@endsection
     @vite('resources/js/app.js')
-</body>
-</html>
+{{-- </body>
+</html> --}}
