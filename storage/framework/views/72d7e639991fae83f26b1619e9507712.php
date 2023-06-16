@@ -54,12 +54,13 @@
 <body>
     <div class="container">
         <h1>Arif - Rahmat - Anggi - Risa (ARAR)</h1>
-        <img class="logo" src="{{ Vite::asset('resources/images/arar-logo.png') }}" alt="ARAR Logo">
+        <img class="logo" src="<?php echo e(Vite::asset('resources/images/arar-logo.png')); ?>" alt="ARAR Logo">
 
         <div style="text-align: center;">
             <a class="btn" href="home">Halaman Utama</a>
         </div>
     </div>
-    @vite('resources/js/app.js')
+    <?php echo app('Illuminate\Foundation\Vite')('resources/js/app.js'); ?>
 </body>
 </html>
+<?php /**PATH /Users/zhahnur/Documents/Kelompok 2 Modul 6/resources/views/welcome.blade.php ENDPATH**/ ?>
